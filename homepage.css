@@ -110,7 +110,7 @@ body {
     flex: 1 0 0;
     align-self: stretch;
     overflow-y: scroll;
-    padding-bottom: max(72px, env(safe-area-inset-bottom));
+    padding-bottom: 59.1px;
 }
 
 .Post {
