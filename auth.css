@@ -1,0 +1,102 @@
+:root {
+    --primary: #4CB5F9;
+    --white: #FFF;
+    --black: #000;
+    --grey: rgba(255, 255, 255, 0.5);
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-family: "Instrument Sans";
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    gap: var(--spacing-lg);
+    margin: 0;
+    padding: var(--spacing-lg);
+    background: var(--black);
+    color: var(--white);
+    font: normal 400 var(--font-size-base)/normal var(--font-family);
+    text-align: center;
+}
+
+.InstagramLogo {
+    width: 64px;
+    height: 64px;
+}
+
+.Heading {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    align-self: stretch;
+}
+
+.Input {
+    display: flex;
+    padding: var(--spacing-sm);
+    align-items: center;
+    align-self: stretch;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--grey);
+    background: none;
+    color: var(--white);
+    font: normal 400 var(--font-size-base)/normal var(--font-family);
+    font-size: 14px;
+}
+
+.BlueText {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.BlueText:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.BlueText:active {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: var(--spacing-sm);
+    border: none;
+    border-radius: var(--radius-md);
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    font: 700 var(--font-size-base)/normal var(--font-family);
+    cursor: pointer;
+}
+
+.Button:hover {
+    transform: scale(1.025);
+}
+
+.Button:active {
+    transform: scale(0.975);
+}

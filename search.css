@@ -1,0 +1,172 @@
+:root {
+    --story-scale: 50/36;
+    --post-scale: 1;
+    --base-size: 36px;
+    --black: #000;
+    --white: #FFF;
+    --grey: rgba(255, 255, 255, 0.5);
+    --font-family: "Instrument Sans";
+    --font-size: 14px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --icon-size: 24px;
+    --icon-padding: 8px;
+    --icon-border-radius: 8px;
+    --icon-border-width: 1px;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-normal);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.SearchPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.SearchFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.SearchBar {
+    background: none;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    font: normal 400 var(--font-size-base)/normal var(--font-family);
+}
+
+.CancelButton {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+}
+
+.Searches {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+    overflow-y: scroll;
+}
+
+.Searches::-webkit-scrollbar {
+    display: none;
+}
+
+.Search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.Avatar {
+    --container-size: calc(var(--base-size) * var(--story-scale));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--container-size);
+    height: var(--container-size);
+    position: relative;
+    margin: 0;
+}
+
+.StoryOverlay {
+    width: var(--container-size);
+    height: var(--container-size);
+    position: absolute;
+}
+
+.ProfilePic {
+    width: calc(var(--container-size) * 30/36);
+    height: calc(var(--container-size) * 30/36);
+    border-radius: 100%;
+}
+
+.Description {
+    display: flex;
+    padding: 8px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.Details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.Pages {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0px 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    position: sticky;
+    bottom: 0;
+}
+
+.IconFrame {
+    display: flex;
+    padding: var(--icon-padding);
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: var(--icon-border-radius);
+    border: var(--icon-border-width) solid var(--grey);
+}
+
+.IconFrame img {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    border-radius: 100%;
+    border: var(--icon-border-width) solid var(--white);
+}

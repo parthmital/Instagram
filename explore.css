@@ -1,0 +1,152 @@
+:root {
+    --story-scale: 90/36;
+    --post-scale: 1;
+    --base-size: 36px;
+    --black: #000;
+    --white: #FFF;
+    --grey: rgba(255, 255, 255, 0.5);
+    --font-family: "Instrument Sans";
+    --font-size: 14px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}
+
+body,
+.ExplorePage,
+.PostsContainer {
+    display: flex;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-normal);
+}
+
+body::-webkit-scrollbar,
+.PostsContainer::-webkit-scrollbar,
+.FiltersBottom::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+
+.BoldText {
+    font-weight: var(--font-weight-bold);
+}
+
+.ExplorePage {
+    flex-direction: column;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.FiltersTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.FilterTop {
+    height: 18px;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+}
+
+.FiltersBottom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.FilterBottom {
+    min-width: fit-content;
+    height: 18px;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+}
+
+.PostsContainer {
+    border-radius: 8px;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    overflow-y: scroll;
+}
+
+.PostsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+}
+
+.Post {
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.Post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Pages {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0px 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    position: sticky;
+    bottom: 0;
+}
+
+.IconFrame {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+}
+
+.IconFrame img {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid var(--white);
+}

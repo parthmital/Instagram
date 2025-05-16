@@ -1,0 +1,223 @@
+:root {
+    --story-scale: 2;
+    --post-scale: 1;
+    --base-size: 36px;
+    --black: #000;
+    --white: #FFF;
+    --grey: rgba(255, 255, 255, 0.5);
+    --font-family: "Instrument Sans";
+    --font-size: 14px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}
+
+body {
+    background: var(--black);
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-self: stretch;
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: normal;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.BoldText {
+    font-weight: var(--font-weight-bold);
+}
+
+.LightText {
+    opacity: 0.5;
+}
+
+.Stories {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    overflow-x: scroll;
+}
+
+.Story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.Story:hover p {
+    transform: scale(1.025);
+}
+
+.Story:active p {
+    transform: scale(0.975);
+}
+
+.Avatar {
+    --container-size: calc(var(--base-size) * var(--story-scale));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--container-size);
+    height: var(--container-size);
+    position: relative;
+    margin: 0;
+}
+
+.Post .Avatar {
+    --container-size: calc(var(--base-size) * var(--post-scale));
+}
+
+.StoryOverlay {
+    width: var(--container-size);
+    height: var(--container-size);
+    position: absolute;
+}
+
+.ProfilePic {
+    width: calc(var(--container-size) * 30/36);
+    height: calc(var(--container-size) * 30/36);
+    border-radius: 100%;
+}
+
+.Posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+    overflow-y: scroll;
+    padding-bottom: max(72px, env(safe-area-inset-bottom));
+}
+
+.Post {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+}
+
+.Post svg:hover {
+    transform: scale(1.05);
+}
+
+.Post svg:active {
+    transform: scale(0.95);
+}
+
+.ProfileContainer {
+    display: flex;
+    padding-bottom: 4px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.Icons {
+    display: flex;
+    padding-top: 4px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.LeftIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.Comments {
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+}
+
+.Comments:hover .LightText {
+    opacity: 1;
+}
+
+.Comments:active .LightText {
+    opacity: 0.5;
+}
+
+.Pages {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 0px 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--black);
+    padding: 16px;
+}
+
+.IconFrame {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 1px solid var(--grey);
+}
+
+.IconFrame:hover {
+    transform: scale(1.05);
+    background-color: var(--grey);
+}
+
+.IconFrame:active {
+    transform: scale(1);
+    background-color: none;
+}
+
+.IconFrame img {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid var(--white);
+}
