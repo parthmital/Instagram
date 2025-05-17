@@ -17,11 +17,6 @@ body {
     height: 64px;
 }
 
-.Heading {
-    font-size: var(--18px);
-    font-weight: var(--font-weight-bold);
-}
-
 .Form {
     display: flex;
     flex-direction: column;
@@ -43,10 +38,6 @@ body {
     font-size: 14px;
 }
 
-.BlueText {
-    color: var(--blue);
-}
-
 .Button {
     display: flex;
     justify-content: center;
@@ -58,5 +49,5 @@ body {
     background: var(--blue);
     color: var(--white);
     text-align: center;
-    font: var(--font-weight-bold) var(--16px)/normal var(--font-family);
+    font: var(--16px);
 }

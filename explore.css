@@ -19,10 +19,6 @@ body {
     font-weight: var(--font-weight-normal);
 }
 
-.BoldText {
-    font-weight: var(--font-weight-bold);
-}
-
 .ExplorePage {
     flex-direction: column;
     gap: var(--16px);

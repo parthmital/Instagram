@@ -25,11 +25,27 @@
     --font-size: 14px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 p {
     margin: 0;
     padding: 0;
 }
 
-::-webkit-scrollbar {
-    display: none;
+.BoldText {
+    font-weight: var(--font-weight-bold);
+}
+
+.LightText {
+    color: var(--grey);
+}
+
+.BlueText {
+    color: var(--blue);
+}
+
+.BigText{
+    font-size: var(--18px);
 }

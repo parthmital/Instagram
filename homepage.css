@@ -20,14 +20,6 @@ body {
     line-height: normal;
 }
 
-.BoldText {
-    font-weight: var(--font-weight-bold);
-}
-
-.LightText {
-    opacity: 0.5;
-}
-
 .Stories {
     display: flex;
     align-items: center;

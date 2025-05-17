@@ -14,19 +14,6 @@ body {
     font-weight: var(--font-weight-normal);
 }
 
-.UserName {
-    font-size: var(--18px);
-    font-weight: var(--font-weight-bold);
-}
-
-.BoldText {
-    font-weight: var(--font-weight-bold);
-}
-
-.LightText {
-    opacity: 0.5;
-}
-
 .MyProfile {
     display: flex;
     flex-direction: column;

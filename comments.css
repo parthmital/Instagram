@@ -14,14 +14,6 @@ body {
     font-weight: var(--font-weight-normal);
 }
 
-.BoldText {
-    font-weight: var(--font-weight-bold);
-}
-
-.LightText {
-    opacity: 0.5;
-}
-
 .CommentsBar {
     display: flex;
     padding: var(--8px);
@@ -30,7 +22,6 @@ body {
     align-self: stretch;
     border-radius: var(--8px);
     border: var(--border-width) solid var(--grey);
-    font-size: var(--18px);
 }
 
 .Comments {

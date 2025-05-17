@@ -18,15 +18,6 @@ body {
     font-size: var(--12px);
 }
 
-.UserName {
-    font-size: var(--18px);
-    font-weight: var(--font-weight-bold);
-}
-
-.BoldText {
-    font-weight: var(--font-weight-bold);
-}
-
 .MyProfile {
     display: flex;
     flex-direction: column;
