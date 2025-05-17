@@ -27,7 +27,7 @@ body {
     font-weight: var(--font-weight-normal);
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -128,7 +128,7 @@ p {
 }
 
 .Stats p {
-    font-size: calc(var(--font-size) * 1.142);
+    font-size: 16px;
 }
 
 .Bottom {
@@ -158,10 +158,6 @@ p {
     align-self: stretch;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-}
-
-.Stories::-webkit-scrollbar {
-    display: none;
 }
 
 .Story {
@@ -199,10 +195,6 @@ p {
     align-self: stretch;
     overflow-y: scroll;
     border-radius: 8px;
-}
-
-.PostsContainer::-webkit-scrollbar {
-    display: none;
 }
 
 .PostsGrid {

@@ -66,14 +66,6 @@ p {
     gap: 4px;
 }
 
-.Story:hover p {
-    transform: scale(1.025);
-}
-
-.Story:active p {
-    transform: scale(0.975);
-}
-
 .Avatar {
     --container-size: calc(var(--base-size) * var(--story-scale));
     display: flex;
@@ -122,14 +114,6 @@ p {
     border: 1px solid var(--grey);
 }
 
-.Post svg:hover {
-    transform: scale(1.05);
-}
-
-.Post svg:active {
-    transform: scale(0.95);
-}
-
 .ProfileContainer {
     display: flex;
     padding-bottom: 4px;
@@ -170,14 +154,6 @@ p {
     border: 1px solid var(--grey);
 }
 
-.Comments:hover .LightText {
-    opacity: 1;
-}
-
-.Comments:active .LightText {
-    opacity: 0.5;
-}
-
 .Pages {
     display: flex;
     align-items: center;
@@ -200,16 +176,6 @@ p {
     flex: 1 0 0;
     border-radius: 8px;
     border: 1px solid var(--grey);
-}
-
-.IconFrame:hover {
-    transform: scale(1.05);
-    background-color: var(--grey);
-}
-
-.IconFrame:active {
-    transform: scale(1);
-    background-color: none;
 }
 
 .IconFrame img {

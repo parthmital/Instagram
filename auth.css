@@ -32,6 +32,10 @@ body {
     text-align: center;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .InstagramLogo {
     width: 64px;
     height: 64px;
@@ -65,17 +69,6 @@ body {
 
 .BlueText {
     color: var(--primary);
-    cursor: pointer;
-}
-
-.BlueText:hover {
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-.BlueText:active {
-    font-weight: 400;
-    text-decoration: none;
 }
 
 .Button {
@@ -90,13 +83,4 @@ body {
     color: var(--white);
     text-align: center;
     font: 700 var(--font-size-base)/normal var(--font-family);
-    cursor: pointer;
-}
-
-.Button:hover {
-    transform: scale(1.025);
-}
-
-.Button:active {
-    transform: scale(0.975);
 }
