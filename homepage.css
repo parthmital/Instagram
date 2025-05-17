@@ -12,22 +12,10 @@
 }
 
 body {
-    background: var(--black);
-    display: flex;
-    padding: 16px;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    margin: 0;
     min-height: 100vh;
-    box-sizing: border-box;
-    margin: 0;
+    background: var(--black);
     overflow: hidden;
-    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 75.6px);
-}
-
-p {
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -40,6 +28,11 @@ body {
     line-height: normal;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -50,6 +43,15 @@ body {
 
 .LightText {
     opacity: 0.5;
+}
+
+.Homepage {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    height: 100vh;
 }
 
 .Stories {
@@ -111,6 +113,7 @@ body {
     flex: 1 0 0;
     align-self: stretch;
     overflow-y: scroll;
+    padding-bottom: 91.6px;
 }
 
 .Post {
@@ -182,17 +185,15 @@ body {
 .Pages {
     display: flex;
     align-items: center;
-    align-content: center;
-    gap: 0px 8px;
-    align-self: stretch;
-    flex-wrap: wrap;
+    gap: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100;
-    background: var(--black);
     padding: 16px;
+    background: var(--black);
 }
 
 .IconFrame {
