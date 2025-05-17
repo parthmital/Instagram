@@ -22,6 +22,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     overflow: hidden;
+    padding-bottom: 75.6px;
 }
 
 p {
@@ -110,7 +111,6 @@ body {
     flex: 1 0 0;
     align-self: stretch;
     overflow-y: scroll;
-    padding-bottom: 59.1px;
 }
 
 .Post {
