@@ -1,10 +1,5 @@
-body,
-.ExplorePage,
-.PostsContainer {
-    display: flex;
-}
-
 body {
+    display: flex;
     background: var(--black);
     color: var(--white);
     padding: var(--16px);
@@ -20,6 +15,7 @@ body {
 }
 
 .ExplorePage {
+    display: flex;
     flex-direction: column;
     gap: var(--16px);
     flex: 1 0 0;
@@ -66,58 +62,11 @@ body {
 }
 
 .PostsContainer {
+    display: flex;
     border-radius: var(--8px);
     justify-content: center;
     align-items: flex-start;
     flex: 1 0 0;
     align-self: stretch;
     overflow-y: scroll;
-}
-
-.PostsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--8px);
-    width: 100%;
-}
-
-.Post {
-    aspect-ratio: 1;
-    overflow: hidden;
-}
-
-.Post img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.Pages {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 0px var(--8px);
-    align-self: stretch;
-    flex-wrap: wrap;
-    padding-bottom: var(--16px);
-    padding-top: var(--16px);
-    position: sticky;
-    bottom: 0;
-}
-
-.IconFrame {
-    display: flex;
-    padding: var(--8px);
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 0;
-    border-radius: var(--8px);
-    border: var(--border-width) solid var(--grey);
-}
-
-.IconFrame img {
-    width: var(--24px);
-    height: var(--24px);
-    border-radius: 100%;
-    border: var(--border-width) solid var(--white);
 }

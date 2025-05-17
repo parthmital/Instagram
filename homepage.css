@@ -37,30 +37,11 @@ body {
 }
 
 .Avatar {
-    --container-size: calc(var(--base-size) * 2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: var(--container-size);
-    height: var(--container-size);
-    position: relative;
-    margin: 0;
+    --container-size: 72px;
 }
 
-.Post .Avatar {
-    --container-size: calc(var(--base-size) * var(--post-scale));
-}
-
-.StoryOverlay {
-    width: var(--container-size);
-    height: var(--container-size);
-    position: absolute;
-}
-
-.ProfilePic {
-    width: calc(var(--container-size) * 30/36);
-    height: calc(var(--container-size) * 30/36);
-    border-radius: 100%;
+.InstagramPost .Avatar {
+    --container-size: 36px;
 }
 
 .Posts {
@@ -74,7 +55,7 @@ body {
     padding-bottom: 91.6px;
 }
 
-.Post {
+.InstagramPost {
     display: flex;
     padding: var(--16px);
     flex-direction: column;
@@ -122,35 +103,4 @@ body {
     align-self: stretch;
     border-radius: var(--8px);
     border: var(--border-width) solid var(--grey);
-}
-
-.Pages {
-    display: flex;
-    align-items: center;
-    gap: var(--8px);
-    overflow-x: auto;
-    white-space: nowrap;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: var(--16px);
-    background: var(--black);
-}
-
-.IconFrame {
-    display: flex;
-    padding: var(--8px);
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 0;
-    border-radius: var(--8px);
-    border: var(--border-width) solid var(--grey);
-}
-
-.IconFrame img {
-    width: var(--24px);
-    height: var(--24px);
-    border-radius: 100%;
-    border: var(--border-width) solid var(--white);
 }

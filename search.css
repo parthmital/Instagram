@@ -71,26 +71,7 @@ body {
 }
 
 .Avatar {
-    --container-size: calc(var(--base-size) * 50/36);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: var(--container-size);
-    height: var(--container-size);
-    position: relative;
-    margin: 0;
-}
-
-.StoryOverlay {
-    width: var(--container-size);
-    height: var(--container-size);
-    position: absolute;
-}
-
-.ProfilePic {
-    width: calc(var(--container-size) * 30/36);
-    height: calc(var(--container-size) * 30/36);
-    border-radius: 100%;
+    --container-size: 50px;
 }
 
 .Description {
@@ -108,34 +89,4 @@ body {
     justify-content: center;
     align-items: center;
     gap: var(--8px);
-}
-
-.Pages {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 0px var(--8px);
-    align-self: stretch;
-    flex-wrap: wrap;
-    padding-bottom: var(--16px);
-    padding-top: var(--16px);
-    position: sticky;
-    bottom: 0;
-}
-
-.IconFrame {
-    display: flex;
-    padding: var(--8px);
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 0;
-    border-radius: var(--8px);
-    border: var(--border-width) solid var(--grey);
-}
-
-.IconFrame img {
-    width: var(--24px);
-    height: var(--24px);
-    border-radius: 100%;
-    border: var(--border-width) solid var(--white);
 }

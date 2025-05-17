@@ -43,26 +43,7 @@ body {
 }
 
 .Avatar {
-    --container-size: calc(var(--base-size) * 50/36);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: var(--container-size);
-    height: var(--container-size);
-    position: relative;
-    margin: 0;
-}
-
-.StoryOverlay {
-    width: var(--container-size);
-    height: var(--container-size);
-    position: absolute;
-}
-
-.ProfilePic {
-    width: calc(var(--container-size) * 30/36);
-    height: calc(var(--container-size) * 30/36);
-    border-radius: 100%;
+    --container-size: 50px;
 }
 
 .Description {
