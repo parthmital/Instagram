@@ -1,8 +1,17 @@
-::-webkit-scrollbar {
-    display: none;
+:root {
+    --white: #FFF;
+    --black: #000;
+    --grey: rgba(255, 255, 255, 0.5);
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-family: "Instrument Sans";
 }
 
 p {
     margin: 0;
     padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

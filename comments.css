@@ -1,13 +1,7 @@
 :root {
     --story-scale: 50/36;
     --base-size: 36px;
-    --black: #000;
-    --white: #FFF;
-    --grey: rgba(255, 255, 255, 0.5);
-    --font-family: "Instrument Sans";
     --font-size: 14px;
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
     --icon-padding: 8px;
     --icon-border-radius: 8px;
     --icon-border-width: 1px;

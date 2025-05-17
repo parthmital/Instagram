@@ -1,15 +1,9 @@
 :root {
-    --blue: #4CB5F9;
-    --white: #FFF;
-    --black: #000;
-    --grey: rgba(255, 255, 255, 0.5);
     --4px: 4px;
     --8px: 8px;
     --16px: 16px;
     --32px: 32px;
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
-    --font-family: "Instrument Sans";
+    --blue: #4CB5F9;
 }
 
 body {

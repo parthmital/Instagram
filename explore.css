@@ -2,13 +2,7 @@
     --story-scale: 90/36;
     --post-scale: 1;
     --base-size: 36px;
-    --black: #000;
-    --white: #FFF;
-    --grey: rgba(255, 255, 255, 0.5);
-    --font-family: "Instrument Sans";
     --font-size: 14px;
-    --font-weight-normal: 400;
-    --font-weight-bold: 700;
 }
 
 body,
