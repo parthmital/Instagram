@@ -20,7 +20,7 @@ body {
     align-self: stretch;
 }
 
-.Button {
+.BlueButton {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -52,12 +52,12 @@ p {
     color: var(--grey);
 }
 
-.BlueText {
-    color: var(--blue);
-}
-
 .BigText {
     font-size: var(--18px);
+}
+
+.BlueText {
+    color: var(--blue);
 }
 
 .Avatar {
