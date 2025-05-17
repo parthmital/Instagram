@@ -27,15 +27,6 @@ body {
     font-weight: var(--font-weight-normal);
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
 .UserName {
     font-size: 18px;
     font-weight: var(--font-weight-bold);

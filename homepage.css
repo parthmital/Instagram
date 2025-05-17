@@ -33,15 +33,6 @@ body {
     line-height: normal;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
 .BoldText {
     font-weight: var(--font-weight-bold);
 }

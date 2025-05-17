@@ -31,15 +31,6 @@ body {
     font-weight: var(--font-weight-normal);
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
 .SearchPage {
     display: flex;
     flex-direction: column;
@@ -87,10 +78,6 @@ p {
     flex: 1 0 0;
     align-self: stretch;
     overflow-y: scroll;
-}
-
-.Searches::-webkit-scrollbar {
-    display: none;
 }
 
 .Search {

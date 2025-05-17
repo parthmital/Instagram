@@ -29,15 +29,6 @@ body {
     font-weight: var(--font-weight-normal);
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
 .BoldText {
     font-weight: var(--font-weight-bold);
 }
@@ -65,10 +56,6 @@ p {
     flex: 1 0 0;
     align-self: stretch;
     overflow-y: scroll;
-}
-
-.Comments::-webkit-scrollbar {
-    display: none;
 }
 
 .Comment {

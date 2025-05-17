@@ -26,15 +26,6 @@ body {
     text-align: center;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
 .InstagramLogo {
     width: 64px;
     height: 64px;
