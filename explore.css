@@ -16,13 +16,10 @@
 
 .FilterTop {
     height: var(--18px);
-    display: flex;
     padding: var(--8px);
     justify-content: center;
     align-items: center;
     flex: 1 0 0;
-    border-radius: var(--8px);
-    border: var(--border-width) solid var(--grey);
 }
 
 .FiltersBottom {
@@ -37,17 +34,13 @@
 .FilterBottom {
     min-width: fit-content;
     height: var(--18px);
-    display: flex;
     padding: var(--8px);
     justify-content: center;
     align-items: center;
-    border-radius: var(--8px);
-    border: var(--border-width) solid var(--grey);
 }
 
 .PostsContainer {
     display: flex;
-    border-radius: var(--8px);
     justify-content: center;
     align-items: flex-start;
     flex: 1 0 0;

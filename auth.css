@@ -21,13 +21,11 @@ body {
 }
 
 .BlueButton {
-    display: flex;
     justify-content: center;
     align-items: center;
     align-self: stretch;
     padding: var(--8px);
     border: none;
-    border-radius: var(--8px);
     background: var(--blue);
     color: var(--white);
     text-align: center;

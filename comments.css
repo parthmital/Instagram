@@ -1,11 +1,8 @@
 .CommentsBar {
-    display: flex;
     padding: var(--8px);
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    border-radius: var(--8px);
-    border: var(--border-width) solid var(--grey);
 }
 
 .Comments {

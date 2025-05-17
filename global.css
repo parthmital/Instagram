@@ -146,13 +146,11 @@ p {
     font-weight: var(--font-weight-normal);
     font-size: var(--font-size);
     font-family: var(--font-family);
+    box-sizing: border-box;
 }
 
 .Button {
     display: flex;
-    justify-content: center;
-    align-items: center;
     border: var(--border-width) solid var(--grey);
     border-radius: var(--8px);
-    padding: var(--8px);
 }
