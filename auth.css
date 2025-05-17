@@ -1,16 +1,9 @@
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    background: var(--black);
-    align-items: center;
-    align-self: stretch;
-
     gap: var(--32px);
     padding: var(--32px);
-
-    color: var(--white);
-    font: normal var(--font-weight-normal) var(--16px)/normal var(--font-family);
+    font-size: var(--16px);
+    min-height: auto;
+    overflow: auto;
     text-align: center;
 }
 
