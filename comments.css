@@ -16,6 +16,7 @@
     flex: 1 0 0;
     align-self: stretch;
     overflow-y: scroll;
+    padding-bottom: 98px;
 }
 
 .Comment {
@@ -58,14 +59,16 @@
 
 .YourComment {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: var(--8px);
-    align-self: stretch;
-    position: sticky;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: fixed;
     bottom: 0;
-    padding-bottom: var(--16px);
-    padding-top: var(--16px);
+    left: 0;
+    right: 0;
+    padding: var(--16px);
+    background: var(--black);
 }
 
 .CommentBar {
