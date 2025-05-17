@@ -15,18 +15,6 @@
     align-self: stretch;
 }
 
-.SearchBar {
-    background: none;
-    display: flex;
-    padding: var(--8px);
-    align-items: center;
-    gap: var(--8px);
-    flex: 1 0 0;
-    border-radius: var(--8px);
-    border: var(--border-width) solid var(--grey);
-    font: normal 400 var(--font-size-base)/normal var(--font-family);
-}
-
 .CancelButton {
     display: flex;
     padding: var(--8px);
