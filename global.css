@@ -2,15 +2,12 @@
     --white: #FFF;
     --black: #000;
     --grey: rgba(255, 255, 255, 0.5);
-
     --red: #FE0135;
     --blue: #4CB5F9;
-
     --font-size: 14px;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --font-family: "Instrument Sans";
-
     --4px: 4px;
     --8px: 8px;
     --12px: 12px;
@@ -18,7 +15,6 @@
     --18px: 18px;
     --24px: 24px;
     --32px: 32px;
-
     --border-width: 1px;
 }
 
