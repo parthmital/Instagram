@@ -1,21 +1,15 @@
 :root {
-    --primary: #4CB5F9;
+    --blue: #4CB5F9;
     --white: #FFF;
     --black: #000;
     --grey: rgba(255, 255, 255, 0.5);
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 32px;
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --font-size-base: 16px;
-    --font-size-lg: 18px;
+    --4px: 4px;
+    --8px: 8px;
+    --16px: 16px;
+    --32px: 32px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
     --font-family: "Instrument Sans";
-}
-
-p {
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -23,13 +17,18 @@ body {
     flex-direction: column;
     align-items: center;
     align-self: stretch;
-    gap: var(--spacing-lg);
+    gap: var(--32px);
     margin: 0;
-    padding: var(--spacing-lg);
+    padding: var(--32px);
     background: var(--black);
     color: var(--white);
-    font: normal 400 var(--font-size-base)/normal var(--font-family);
+    font: normal var(--font-weight-normal) var(--16px)/normal var(--font-family);
     text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -42,33 +41,33 @@ body {
 }
 
 .Heading {
-    font-size: var(--font-size-lg);
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
 }
 
 .Form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-md);
+    gap: var(--16px);
     align-self: stretch;
 }
 
 .Input {
     display: flex;
-    padding: var(--spacing-sm);
+    padding: var(--8px);
     align-items: center;
     align-self: stretch;
-    border-radius: var(--radius-sm);
+    border-radius: var(--4px);
     border: 1px solid var(--grey);
     background: none;
     color: var(--white);
-    font: normal 400 var(--font-size-base)/normal var(--font-family);
+    font: normal var(--font-weight-normal) var(--16px)/normal var(--font-family);
     font-size: 14px;
 }
 
 .BlueText {
-    color: var(--primary);
+    color: var(--blue);
 }
 
 .Button {
@@ -76,11 +75,11 @@ body {
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    padding: var(--spacing-sm);
+    padding: var(--8px);
     border: none;
-    border-radius: var(--radius-md);
-    background: var(--primary);
+    border-radius: var(--8px);
+    background: var(--blue);
     color: var(--white);
     text-align: center;
-    font: 700 var(--font-size-base)/normal var(--font-family);
+    font: var(--font-weight-bold) var(--16px)/normal var(--font-family);
 }
