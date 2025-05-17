@@ -35,12 +35,12 @@
 
 .InstagramPost {
     display: flex;
+    border: var(--border-width) solid var(--grey);
+    border-radius: var(--8px);
     padding: var(--16px);
     flex-direction: column;
     gap: var(--8px);
     align-self: stretch;
-    border-radius: var(--8px);
-    border: var(--border-width) solid var(--grey);
 }
 
 .ProfileContainer {
