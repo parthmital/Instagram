@@ -1,12 +1,3 @@
-:root {
-    --story-scale: 50/36;
-    --base-size: 36px;
-    --font-size: 14px;
-    --icon-padding: var(--8px);
-    --icon-border-radius: var(--8px);
-    --icon-border-width: 1px;
-}
-
 body {
     background: var(--black);
     color: var(--white);
@@ -37,8 +28,8 @@ body {
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    border-radius: var(--icon-border-radius);
-    border: var(--icon-border-width) solid var(--grey);
+    border-radius: var(--8px);
+    border: var(--border-width) solid var(--grey);
     font-size: var(--18px);
 }
 
@@ -61,7 +52,7 @@ body {
 }
 
 .Avatar {
-    --container-size: calc(var(--base-size) * var(--story-scale));
+    --container-size: calc(var(--base-size) * 50/36);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +76,6 @@ body {
 
 .Description {
     display: flex;
-    padding: var(--8px) 0px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -107,7 +97,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--4px);
+    gap: var(--8px);
 }
 
 .YourComment {
@@ -127,9 +117,9 @@ body {
     display: flex;
     padding: var(--8px);
     align-items: center;
-    gap: var(--icon-padding);
+    gap: var(--8px);
     flex: 1 0 0;
-    border-radius: var(--icon-border-radius);
-    border: var(--icon-border-width) solid var(--grey);
+    border-radius: var(--8px);
+    border: var(--border-width) solid var(--grey);
     font: normal 400 var(--font-size-base)/normal var(--font-family);
 }
