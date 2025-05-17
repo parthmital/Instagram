@@ -59,24 +59,6 @@
     --container-size: 90px;
 }
 
-.StatsFrame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--16px);
-}
-
-.Stats {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.Stats p {
-    font-size: var(--16px);
-}
-
 .Bottom {
     display: flex;
     padding-top: var(--8px);
@@ -115,13 +97,4 @@
     align-items: center;
     flex: 1 0 0;
     align-self: stretch;
-}
-
-.PostsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1 0 0;
-    align-self: stretch;
-    overflow-y: scroll;
 }

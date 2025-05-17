@@ -38,12 +38,3 @@
     justify-content: center;
     align-items: center;
 }
-
-.PostsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1 0 0;
-    align-self: stretch;
-    overflow-y: scroll;
-}

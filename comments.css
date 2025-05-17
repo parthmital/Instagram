@@ -53,17 +53,3 @@
     align-items: center;
     gap: var(--8px);
 }
-
-.YourComment {
-    display: flex;
-    align-items: center;
-    gap: var(--8px);
-    overflow-x: auto;
-    white-space: nowrap;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: var(--16px);
-    background: var(--black);
-}

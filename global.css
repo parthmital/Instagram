@@ -60,29 +60,7 @@ p {
     color: var(--blue);
 }
 
-.Avatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: var(--container-size);
-    height: var(--container-size);
-    position: relative;
-    margin: 0;
-}
-
-.StoryOverlay {
-    width: var(--container-size);
-    height: var(--container-size);
-    position: absolute;
-}
-
-.ProfilePic {
-    width: calc(var(--container-size) * 30/36);
-    height: calc(var(--container-size) * 30/36);
-    border-radius: 100%;
-}
-
-.Pages {
+.FixedBottom {
     display: flex;
     align-items: center;
     gap: var(--8px);
@@ -94,6 +72,59 @@ p {
     right: 0;
     padding: var(--16px);
     background: var(--black);
+}
+
+.PostsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--8px);
+    width: 100%;
+    padding-bottom: 91.6px;
+}
+
+.PostsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    overflow-y: scroll;
+}
+
+.Stories {
+    display: flex;
+    align-items: center;
+    gap: var(--8px);
+    align-self: stretch;
+    overflow-x: scroll;
+}
+
+.StatsFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--16px);
+}
+
+.Stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Stats p {
+    font-size: var(--16px);
+}
+
+.Avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--container-size);
+    height: var(--container-size);
+    position: relative;
+    margin: 0;
 }
 
 .IconFrame {
@@ -111,25 +142,6 @@ p {
     height: var(--24px);
     border-radius: 100%;
     border: var(--border-width) solid var(--white);
-}
-
-.PostsGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--8px);
-    width: 100%;
-    padding-bottom: 91.6px;
-}
-
-.Post {
-    aspect-ratio: 1;
-    overflow: hidden;
-}
-
-.Post img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .InputField {
@@ -153,4 +165,35 @@ p {
     display: flex;
     border: var(--border-width) solid var(--grey);
     border-radius: var(--8px);
+}
+
+.StoryOverlay {
+    width: var(--container-size);
+    height: var(--container-size);
+    position: absolute;
+}
+
+.ProfilePic {
+    width: calc(var(--container-size) * 30/36);
+    height: calc(var(--container-size) * 30/36);
+    border-radius: 100%;
+}
+
+.Post {
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.Post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--4px);
 }
