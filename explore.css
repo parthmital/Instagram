@@ -14,10 +14,10 @@ body,
 body {
     background: var(--black);
     color: var(--white);
-    padding: 16px;
+    padding: var(--16px);
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: var(--16px);
     margin: 0;
     height: 100vh;
     overflow: hidden;
@@ -32,7 +32,7 @@ body {
 
 .ExplorePage {
     flex-direction: column;
-    gap: 16px;
+    gap: var(--16px);
     flex: 1 0 0;
     align-self: stretch;
 }
@@ -41,25 +41,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: var(--8px);
     align-self: stretch;
 }
 
 .FilterTop {
-    height: 18px;
+    height: var(--18px);
     display: flex;
-    padding: 8px;
+    padding: var(--8px);
     justify-content: center;
     align-items: center;
     flex: 1 0 0;
-    border-radius: 8px;
+    border-radius: var(--8px);
     border: 1px solid var(--grey);
 }
 
 .FiltersBottom {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--8px);
     align-self: stretch;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -67,17 +67,17 @@ body {
 
 .FilterBottom {
     min-width: fit-content;
-    height: 18px;
+    height: var(--18px);
     display: flex;
-    padding: 8px;
+    padding: var(--8px);
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: var(--8px);
     border: 1px solid var(--grey);
 }
 
 .PostsContainer {
-    border-radius: 8px;
+    border-radius: var(--8px);
     justify-content: center;
     align-items: flex-start;
     flex: 1 0 0;
@@ -88,7 +88,7 @@ body {
 .PostsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: var(--8px);
     width: 100%;
 }
 
@@ -107,28 +107,28 @@ body {
     display: flex;
     align-items: center;
     align-content: center;
-    gap: 0px 8px;
+    gap: 0px var(--8px);
     align-self: stretch;
     flex-wrap: wrap;
-    padding-bottom: 16px;
-    padding-top: 16px;
+    padding-bottom: var(--16px);
+    padding-top: var(--16px);
     position: sticky;
     bottom: 0;
 }
 
 .IconFrame {
     display: flex;
-    padding: 8px;
+    padding: var(--8px);
     justify-content: center;
     align-items: center;
     flex: 1 0 0;
-    border-radius: 8px;
+    border-radius: var(--8px);
     border: 1px solid var(--grey);
 }
 
 .IconFrame img {
-    width: 24px;
-    height: 24px;
+    width: var(--24px);
+    height: var(--24px);
     border-radius: 100%;
     border: 1px solid var(--white);
 }

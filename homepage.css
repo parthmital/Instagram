@@ -10,10 +10,10 @@ body {
     background: var(--black);
     overflow: hidden;
     display: flex;
-    padding: 16px;
+    padding: var(--16px);
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: var(--16px);
     min-height: 100dvh;
 }
 
@@ -38,7 +38,7 @@ body {
 .Stories {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--8px);
     align-self: stretch;
     overflow-x: scroll;
 }
@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: var(--4px);
 }
 
 .Avatar {
@@ -82,7 +82,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    gap: var(--16px);
     flex: 1 0 0;
     align-self: stretch;
     overflow-y: scroll;
@@ -91,17 +91,17 @@ body {
 
 .Post {
     display: flex;
-    padding: 16px;
+    padding: var(--16px);
     flex-direction: column;
-    gap: 8px;
+    gap: var(--8px);
     align-self: stretch;
-    border-radius: 8px;
+    border-radius: var(--8px);
     border: 1px solid var(--grey);
 }
 
 .ProfileContainer {
     display: flex;
-    padding-bottom: 4px;
+    padding-bottom: var(--4px);
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
@@ -111,12 +111,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: var(--4px);
 }
 
 .Icons {
     display: flex;
-    padding-top: 4px;
+    padding-top: var(--4px);
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
@@ -126,46 +126,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: var(--16px);
 }
 
 .Comments {
     display: flex;
-    padding: 8px;
+    padding: var(--8px);
     flex-direction: column;
-    gap: 4px;
+    gap: var(--4px);
     align-self: stretch;
-    border-radius: 8px;
+    border-radius: var(--8px);
     border: 1px solid var(--grey);
 }
 
 .Pages {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--8px);
     overflow-x: auto;
     white-space: nowrap;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 16px;
+    padding: var(--16px);
     background: var(--black);
 }
 
 .IconFrame {
     display: flex;
-    padding: 8px;
+    padding: var(--8px);
     justify-content: center;
     align-items: center;
     flex: 1 0 0;
-    border-radius: 8px;
+    border-radius: var(--8px);
     border: 1px solid var(--grey);
 }
 
 .IconFrame img {
-    width: 24px;
-    height: 24px;
+    width: var(--24px);
+    height: var(--24px);
     border-radius: 100%;
     border: 1px solid var(--white);
 }
