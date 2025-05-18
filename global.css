@@ -46,7 +46,6 @@
     .Button:not(.BlueButton),
     .InputField {
         background-color: var(--accent) !important;
-        border-color: transparent !important;
     }
 
     .InstagramPost .Comments {
