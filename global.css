@@ -267,9 +267,9 @@ p {
 }
 
 .Button:hover:not(.BlueButton, .InstagramPost) {
-    background-color: var(--accent);
+    background-color: rgba(var(--white-rgb), 0.25);
 }
 
 .Button:active:not(.BlueButton, .InstagramPost) {
-    background-color: var(--accent);
+    background-color: rgba(var(--white-rgb), 0.25);
 }
