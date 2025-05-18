@@ -41,6 +41,15 @@
     .IconFrame img {
         border-color: var(--grey) !important;
     }
+
+    .Button:not(.BlueButton),
+    .InputField {
+        background-color: #efefef !important;
+    }
+
+    .InstagramPost .Comments {
+        background-color: var(--black) !important;
+    }
 }
 
 body {
