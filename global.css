@@ -266,6 +266,10 @@ p {
     cursor: pointer;
 }
 
+.Button:hover:not(.BlueButton, .InstagramPost) {
+    background-color: var(--accent);
+}
+
 .Button:active:not(.BlueButton, .InstagramPost) {
     background-color: var(--accent);
 }
