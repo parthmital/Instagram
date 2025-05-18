@@ -1,7 +1,9 @@
 :root {
-    --white: #FFF;
+    --white: #fff;
     --black: #000;
-    --grey: rgba(255, 255, 255, 0.5);
+    --white-rgb: 255, 255, 255;
+    --black-rgb: 0, 0, 0;
+    --grey: rgba(var(--white-rgb), 0.5);
     --red: #FE0135;
     --blue: #4CB5F9;
     --4px: 4px;
@@ -16,6 +18,29 @@
     --font-size: 14px;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --white: #000;
+        --black: #fff;
+        --white-rgb: 0, 0, 0;
+        --black-rgb: 255, 255, 255;
+        --grey: rgba(var(--white-rgb), 0.5);
+    }
+
+    svg:not(.StoryOverlay, .InstagramLogo) {
+        filter: invert(100%);
+    }
+
+    .BlueButton,
+    .Notifications {
+        color: var(--black) !important;
+    }
+
+    .IconFrame img {
+        border-color: var(--grey) !important;
+    }
 }
 
 body {
@@ -79,7 +104,16 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--8px);
     width: 100%;
+}
+
+.PostsGrid,
+.Posts,
+.Searches {
     padding-bottom: 91.6px;
+}
+
+.Comments {
+    padding-bottom: 98px;
 }
 
 .PostsContainer {
