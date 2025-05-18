@@ -6,6 +6,7 @@
     --grey: rgba(var(--white-rgb), 0.5);
     --red: #FE0135;
     --blue: #4CB5F9;
+    --accent: #EFEFEF;
     --4px: 4px;
     --8px: 8px;
     --12px: 12px;
@@ -44,7 +45,8 @@
 
     .Button:not(.BlueButton),
     .InputField {
-        background-color: #efefef !important;
+        background-color: var(--accent) !important;
+        border-color: transparent !important;
     }
 
     .InstagramPost .Comments {
