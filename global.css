@@ -4,9 +4,9 @@
     --white-rgb: 255, 255, 255;
     --black-rgb: 0, 0, 0;
     --grey: rgba(var(--white-rgb), 0.5);
+    --accent: rgba(var(--white-rgb), 0.1);
     --red: #FE0135;
     --blue: #4CB5F9;
-    --accent: #EFEFEF;
     --4px: 4px;
     --8px: 8px;
     --12px: 12px;
@@ -46,10 +46,19 @@
     .Button:not(.BlueButton),
     .InputField {
         background-color: var(--accent) !important;
+        border-color: transparent !important;
     }
 
     .InstagramPost .Comments {
         background-color: var(--black) !important;
+    }
+
+    .Button:hover:not(.BlueButton) {
+        border-color: var(--grey) !important;
+    }
+
+    .Button:active:not(.BlueButton) {
+        border-color: var(--grey) !important;
     }
 }
 
@@ -240,4 +249,23 @@ p {
     justify-content: center;
     align-items: center;
     gap: var(--4px);
+}
+
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.Button:hover,
+.BlueText:hover,
+.LightText:hover {
+    cursor: pointer;
+}
+
+.Button:active:not(.BlueButton, .InstagramPost) {
+    background-color: var(--accent);
 }
