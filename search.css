@@ -43,16 +43,6 @@
     --container-size: 50px;
 }
 
-.Description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: var(--4px);
-    flex: 1 0 0;
-    align-self: stretch;
-}
-
 .Details {
     display: flex;
     justify-content: center;
