@@ -299,8 +299,6 @@ p {
     align-self: stretch;
 }
 
-
-
 .Bottom {
     display: flex;
     padding-top: var(--8px);
